@@ -18,6 +18,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    self.glView = [[OGLView alloc] initWithFrame:screenBounds];
+    
+    [self.view addSubview:_glView];
 }
 
 - (void)didReceiveMemoryWarning

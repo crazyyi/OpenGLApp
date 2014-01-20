@@ -7,12 +7,15 @@
 //
 
 #import "OGLAppDelegate.h"
+#import "OGLViewController.h"
 
 @implementation OGLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    OGLViewController *controller = [[OGLViewController alloc] init];
+    self.window.rootViewController = controller;
     return YES;
 }
 							

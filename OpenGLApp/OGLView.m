@@ -25,14 +25,12 @@
 
 -(void)dealloc
 {
-    [_context release];
     _context = nil;
-    [super dealloc];
 }
 
 - (void)render
 {
-    glClearColor(0, 104.0/255.0, 55.0/255.0, 1.0);
+    glClearColor(0, 120.0/255.0, 55.0/255.0, 1.0);
     glClear(GL_COLOR_BUFFER_BIT);
     [_context presentRenderbuffer:GL_RENDERBUFFER];
 }

@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OGLView.h"
 
 @interface OGLViewController : UIViewController
 
+@property (nonatomic, strong) IBOutlet OGLView *glView;
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OGLView.h"
 
 @interface OGLAppDelegate : UIResponder <UIApplicationDelegate>
 
