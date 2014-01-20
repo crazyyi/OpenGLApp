@@ -21,6 +21,9 @@
 		A310976A188CC7B600503D19 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A310974C188CC7B600503D19 /* UIKit.framework */; };
 		A3109772188CC7B600503D19 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3109770188CC7B600503D19 /* InfoPlist.strings */; };
 		A3109774188CC7B600503D19 /* OpenGLAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3109773188CC7B600503D19 /* OpenGLAppTests.m */; };
+		A310977F188CC7EF00503D19 /* OGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = A310977E188CC7EF00503D19 /* OGLView.m */; };
+		A3109781188CC80800503D19 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3109780188CC80800503D19 /* OpenGLES.framework */; };
+		A3109783188CC80E00503D19 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3109782188CC80E00503D19 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,10 @@
 		A310976F188CC7B600503D19 /* OpenGLAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenGLAppTests-Info.plist"; sourceTree = "<group>"; };
 		A3109771188CC7B600503D19 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A3109773188CC7B600503D19 /* OpenGLAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLAppTests.m; sourceTree = "<group>"; };
+		A310977D188CC7EF00503D19 /* OGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGLView.h; sourceTree = "<group>"; };
+		A310977E188CC7EF00503D19 /* OGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGLView.m; sourceTree = "<group>"; };
+		A3109780188CC80800503D19 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		A3109782188CC80E00503D19 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3109783188CC80E00503D19 /* QuartzCore.framework in Frameworks */,
+				A3109781188CC80800503D19 /* OpenGLES.framework in Frameworks */,
 				A310974B188CC7B600503D19 /* CoreGraphics.framework in Frameworks */,
 				A310974D188CC7B600503D19 /* UIKit.framework in Frameworks */,
 				A3109749188CC7B600503D19 /* Foundation.framework in Frameworks */,
@@ -101,6 +110,8 @@
 		A3109747188CC7B600503D19 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A3109782188CC80E00503D19 /* QuartzCore.framework */,
+				A3109780188CC80800503D19 /* OpenGLES.framework */,
 				A3109748188CC7B600503D19 /* Foundation.framework */,
 				A310974A188CC7B600503D19 /* CoreGraphics.framework */,
 				A310974C188CC7B600503D19 /* UIKit.framework */,
@@ -117,6 +128,8 @@
 				A310975A188CC7B600503D19 /* Main.storyboard */,
 				A310975D188CC7B600503D19 /* OGLViewController.h */,
 				A310975E188CC7B600503D19 /* OGLViewController.m */,
+				A310977D188CC7EF00503D19 /* OGLView.h */,
+				A310977E188CC7EF00503D19 /* OGLView.m */,
 				A3109760188CC7B600503D19 /* Images.xcassets */,
 				A310974F188CC7B600503D19 /* Supporting Files */,
 			);
@@ -251,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3109755188CC7B600503D19 /* main.m in Sources */,
+				A310977F188CC7EF00503D19 /* OGLView.m in Sources */,
 				A3109759188CC7B600503D19 /* OGLAppDelegate.m in Sources */,
 				A310975F188CC7B600503D19 /* OGLViewController.m in Sources */,
 			);
